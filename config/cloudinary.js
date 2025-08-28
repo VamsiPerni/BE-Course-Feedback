@@ -10,7 +10,7 @@ const uploadToCloudinary = async (filePath) => {
   const pr = new Promise((resolve, reject) => {
     cloudinary.uploader.upload(
       filePath,
-      { folder: "GenUI-App/users" },
+      { folder: "Course-Feedback/users" },
       (error, result) => {
         if (error) {
           console.log("------- ❌ cloudinary file upload error ---------");
